@@ -48,7 +48,7 @@ export default function Login (){
                 <TextField id="outlined-basic" name="password" label="Password" variant="outlined" onChange={handleChange}
                 //onChange={(event) => setPassword(event.target.value)}
                 />
-                <Button variant="contained" type="submit">Log In</Button>;
+                <Button variant="contained" type="submit">Log In</Button>
             </Stack>
         </form>
     )
