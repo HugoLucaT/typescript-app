@@ -19,7 +19,7 @@ import Login from "./components/Login";
 import Name from "./components/Name";
 import HomePage from "./components/Home";
 
-const router = createHashRouter(
+const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<HomePage />} />
