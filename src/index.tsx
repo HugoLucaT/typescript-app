@@ -10,6 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import {
   createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -18,13 +19,15 @@ import Login from "./components/Login";
 import Name from "./components/Name";
 import HomePage from "./components/Home";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
-    <Route path="/typescript-app" element={<App />}>
+    <Route path="/" element={<App />}>
+      <Route index element={<HomePage />} />
       <Route path="login" element={<Login />} />
       <Route path="contact" element={<Name title="Hugo Luca" />} />
     </Route>
-  )
+  ),
+  { basename: "/typescript-app" }
 );
 
 const root = ReactDOM.createRoot(

@@ -10,10 +10,10 @@ export default function Header() {
           <Button color="inherit" component={Link} to="/typescript-app">
             Home Page
           </Button>
-          <Button color="inherit" component={Link} to="/typescript-app/contact">
+          <Button color="inherit" component={Link} to="/contact">
             Contact
           </Button>
-          <Button color="inherit" component={Link} to="/typescript-app/login">
+          <Button color="inherit" component={Link} to="/login">
             Login
           </Button>
         </Box>
