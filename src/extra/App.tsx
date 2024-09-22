@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import Container from '@mui/material/Container';
-import Login from '../components/Login';
+import Container from "@mui/material/Container";
+import Login from "../components/Login";
 
 function App() {
   return (
     <Container maxWidth="sm">
-      <Login/>
+      <Login />
       <p>extra</p>
     </Container>
   );

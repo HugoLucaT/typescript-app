@@ -1,5 +1,5 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
+import * as React from "react";
+import Button from "@mui/material/Button";
 
 export default function ButtonUsage() {
   return <Button variant="contained">Log In</Button>;
