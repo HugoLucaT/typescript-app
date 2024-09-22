@@ -14,12 +14,15 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import Login from "./components/Login";
+import Name from "./components/Name";
+import HomePage from "./components/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route path="extra" element={<h1>Extra</h1>} />
-      <Route path="contact" element={<h1>Contact</h1>} />
+    <Route path="/typescript-app" element={<App />}>
+      <Route path="login" element={<Login />} />
+      <Route path="contact" element={<Name title="Hugo Luca" />} />
     </Route>
   )
 );
